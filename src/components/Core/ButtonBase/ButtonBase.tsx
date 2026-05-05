@@ -10,7 +10,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import Haptic from 'react-native-haptic-feedback';
-import type theme from '../../../theme';
+import { theme } from '../../../theme';
 
 export const ButtonBase = ({
   children,

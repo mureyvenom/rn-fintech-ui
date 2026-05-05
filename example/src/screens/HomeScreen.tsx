@@ -1,7 +1,8 @@
 import { FlatList } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { Box, Text, componentRegistry } from 'react-native-fintech-kit';
+import { Box, Text } from 'react-native-fintech-kit';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { componentRegistry } from '../utils/componentRegistry';
 
 const HomeScreen = () => {
   const navigation = useNavigation();

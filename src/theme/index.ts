@@ -3,11 +3,16 @@ import { lightColors, darkColors } from './tokens/colors';
 import { appSpacing } from './tokens/spacing';
 import { typography } from './tokens/typography';
 
-export const theme = createTheme({
-  colors: lightColors,
+// ✅ Define raw config once, build both themes from it
+const baseConfig = {
   spacing: appSpacing,
   textVariants: typography,
   breakpoints: {},
+};
+
+export const theme = createTheme({
+  ...baseConfig,
+  colors: lightColors,
 });
 
 export type Theme = typeof theme;
@@ -16,13 +21,12 @@ export const darkTheme: Theme = {
   ...theme,
   colors: darkColors,
 };
-export default theme;
 
-export const createAppTheme = (mode: 'light' | 'dark') =>
+// ✅ Now createAppTheme builds from raw config, not a processed theme
+export const createAppTheme = (mode: 'light' | 'dark'): Theme =>
   createTheme({
-    ...theme,
+    ...baseConfig,
     colors: mode === 'light' ? lightColors : darkColors,
-    // spacing: { ...theme.spacing },
   });
 
 export type AppTheme = ReturnType<typeof createAppTheme>;

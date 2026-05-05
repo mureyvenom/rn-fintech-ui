@@ -214,15 +214,20 @@ const OtpInput = ({
             }}
           >
             <Box
-              width={52}
-              height={60}
-              borderWidth={focusedIndex === index ? 2 : 1}
-              borderColor={getBorderColor(index)}
-              borderRadius={16}
               alignItems="center"
               justifyContent="center"
+              width={config.cellSize.width}
+              height={config.cellSize.height}
+              borderRadius={config.cellBorderRadius}
+              borderWidth={
+                focusedIndex === index
+                  ? config.cellBorderWidth + 1
+                  : config.cellBorderWidth
+              }
+              borderColor={getBorderColor(index)}
+              gap={config.gap}
               backgroundColor={
-                disabled ? 'stateDisabled' : 'backgroundSecondary'
+                disabled ? 'stateDisabled' : config.backgroundColor
               }
               style={styles.cell}
             >
