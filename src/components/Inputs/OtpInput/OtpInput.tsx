@@ -16,6 +16,7 @@ interface TextInputKeyPressEventData {
 import Box from '../../Core/Box';
 import type { Theme } from '../../../theme';
 import type { OtpInputConfig } from '../../../theme/config';
+import { useHaptics } from '../../../hooks/useHaptics';
 
 export type OtpInputProps = {
   /** Number of OTP digits. Defaults to 6. */
@@ -62,6 +63,7 @@ const OtpInput = ({
 }: OtpInputProps) => {
   const theme = useTheme<Theme>();
   type TextInputRef = React.ElementRef<typeof TextInput>;
+  const { impact } = useHaptics();
 
   const inputs = useRef<Array<TextInputRef | null>>([]);
   const { otpInput: overrides = {} } = useComponentConfig();
@@ -141,6 +143,7 @@ const OtpInput = ({
       if (text.length > 1) {
         const pasted = text.replace(/\D/g, '').slice(0, length);
         onChange(pasted);
+        impact();
         const nextIndex = Math.min(pasted.length, length - 1);
         inputs.current[nextIndex]?.focus();
 
@@ -155,6 +158,7 @@ const OtpInput = ({
       chars[index] = text;
       const newValue = chars.join('').trimEnd();
       onChange(newValue);
+      impact();
 
       if (text && index < length - 1) {
         inputs.current[index + 1]?.focus();
@@ -162,10 +166,11 @@ const OtpInput = ({
 
       if (text && index === length - 1 && newValue.length === length) {
         onComplete?.(newValue);
+        impact();
         inputs.current[index]?.blur();
       }
     },
-    [value, length, onChange, onComplete]
+    [value, length, onChange, onComplete, impact]
   );
 
   const handleKeyPress = useCallback(

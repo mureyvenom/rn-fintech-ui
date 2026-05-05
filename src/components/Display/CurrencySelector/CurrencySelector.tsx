@@ -16,6 +16,7 @@ import Box from '../../Core/Box';
 import Text from '../../Core/Text';
 import type { Theme } from '../../../theme';
 import type { Currency } from '../../../types/global';
+import { useHaptics } from '../../../hooks/useHaptics';
 
 export type CurrencySelectorProps = {
   isOpen: boolean;
@@ -43,16 +44,17 @@ const CurrencySelector = ({
   const theme = useTheme<Theme>();
   const sheetRef = useRef<BottomSheet>(null);
   const [query, setQuery] = useState('');
-  console.log('isOpen', isOpen);
+  const { impact } = useHaptics();
   // Open/close sheet in response to isOpen prop
   useEffect(() => {
     if (isOpen) {
       sheetRef.current?.expand();
+      impact();
     } else {
       sheetRef.current?.close();
       setQuery(''); // clear search on close
     }
-  }, [isOpen]);
+  }, [isOpen, impact]);
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();

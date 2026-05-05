@@ -113,13 +113,7 @@
     "react-native-worklets": ">=0.8.0"
   },
   "peerDependenciesMeta": {
-    "@gorhom/bottom-sheet": {
-      "optional": true
-    },
-    "react-native-haptic-feedback": {
-      "optional": true
-    },
-    "react-native-worklets": {
+    "react-native-screens": {
       "optional": true
     }
   },
