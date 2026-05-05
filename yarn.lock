@@ -11311,30 +11311,19 @@ __metadata:
     release-it: "npm:^19.2.4"
     turbo: "npm:^2.8.21"
     typescript: "npm:^6.0.2"
-    yarn: "npm:^1.22.22"
   peerDependencies:
     "@gorhom/bottom-sheet": ">=5.0.0"
     "@shopify/restyle": ">=2.4.0"
-    add: "*"
     react: ">=18.0.0"
     react-native: ">=0.72.0"
-    react-native-gesture-handler: "*"
+    react-native-gesture-handler: ">=2.31.2"
     react-native-haptic-feedback: ">=2.0.0"
     react-native-reanimated: ">=3.0.0"
     react-native-safe-area-context: ">=4.0.0"
     react-native-screens: ">=3.0.0"
     react-native-worklets: ">=0.8.0"
-    yarn: "*"
   peerDependenciesMeta:
-    "@gorhom/bottom-sheet":
-      optional: true
-    "@react-navigation/native":
-      optional: true
-    "@react-navigation/native-stack":
-      optional: true
-    react-native-haptic-feedback:
-      optional: true
-    react-native-worklets:
+    react-native-screens:
       optional: true
   languageName: unknown
   linkType: soft
@@ -13746,16 +13735,6 @@ __metadata:
     y18n: "npm:^5.0.5"
     yargs-parser: "npm:^22.0.0"
   checksum: 10c0/bf290e4723876ea9c638c786a5c42ac28e03c9ca2325e1424bf43b94e5876456292d3ed905b853ebbba6daf43ed29e772ac2a6b3c5fb1b16533245d6211778f3
-  languageName: node
-  linkType: hard
-
-"yarn@npm:^1.22.22":
-  version: 1.22.22
-  resolution: "yarn@npm:1.22.22"
-  bin:
-    yarn: bin/yarn.js
-    yarnpkg: bin/yarn.js
-  checksum: 10c0/8c77198c93d7542e7f4e131c63b66de357b7076ecfbcfe709ec0d674115c2dd9edaa45196e5510e6e9366d368707a802579e3402071002e1c9d9a99d491478de
   languageName: node
   linkType: hard
 
