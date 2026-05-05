@@ -1,7 +1,7 @@
 import type { Theme } from '.';
 import type { AmountInputConfig } from '../components/AmountInput/AmountInput.types';
+import type { TransactionCardConfig } from '../components/TransactionCard/TransactionCard.types';
 
-// src/theme/types.ts
 export type OtpInputConfig = {
   cellSize?: { width: number; height: number };
   cellBorderRadius?: number;
@@ -23,11 +23,18 @@ export type ButtonConfig = {
   fontFamily?: string;
 };
 
+export type BalanceDisplayConfig = {
+  fontSize?: number;
+  currencyFontSize?: number;
+  fontFamily?: string;
+};
+
 // Grow this as you add components
 export type FintechKitConfig = {
   otpInput?: OtpInputConfig;
   button?: ButtonConfig;
   amountInput?: AmountInputConfig;
+  balanceDisplay?: BalanceDisplayConfig;
+  transactionCard?: TransactionCardConfig;
   // pinPad?: PinPadConfig;
-  // transactionCard?: TransactionCardConfig;
 };

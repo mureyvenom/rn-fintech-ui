@@ -3,12 +3,16 @@ import { HomeScreen } from '../screens';
 import BaseButtonScreen from '../screens/BaseButtonScreen';
 import { OtpScreen } from '../screens/OtpScreen';
 import { PaymentScreen } from '../screens/AmountInputScreen';
+import { BalanceDisplayScreen } from '../screens/BalanceDisplayScreen';
+import { TransactionsScreen } from '../screens/TransactionsScreen';
 
 export type ParamList = {
   Home: undefined;
   ButtonScreen: undefined;
   OtpScreen: undefined;
   AmountInputScreen: undefined;
+  BalanceDisplayScreen: undefined;
+  TransactionCardScreen: undefined;
 };
 
 const Stack = createNativeStackNavigator<ParamList>();
@@ -21,6 +25,14 @@ const AppNavigator = () => {
         <Stack.Screen name="ButtonScreen" component={BaseButtonScreen} />
         <Stack.Screen name="OtpScreen" component={OtpScreen} />
         <Stack.Screen name="AmountInputScreen" component={PaymentScreen} />
+        <Stack.Screen
+          name="BalanceDisplayScreen"
+          component={BalanceDisplayScreen}
+        />
+        <Stack.Screen
+          name="TransactionCardScreen"
+          component={TransactionsScreen}
+        />
       </Stack.Navigator>
     </>
   );

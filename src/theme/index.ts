@@ -25,6 +25,9 @@ export const lightColors = {
   stateDisabled: '#CCCCCC',
   statePressed: '#E6E6E6',
   transparent: 'transparent',
+  successBackground: '#EAF3DE',
+  warningBackground: '#FAEEDA',
+  dangerBackground: '#FCEBEB',
 };
 
 export const darkColors: typeof lightColors = {
@@ -52,6 +55,9 @@ export const darkColors: typeof lightColors = {
   stateDisabled: '#3A3F4A',
   statePressed: '#2A2F3A',
   transparent: 'transparent',
+  successBackground: '#27500A',
+  warningBackground: '#633806',
+  dangerBackground: '#791F1F',
 };
 
 export const theme = createTheme({
