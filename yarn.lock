@@ -4076,13 +4076,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/add@npm:^2":
-  version: 2.0.3
-  resolution: "@types/add@npm:2.0.3"
-  checksum: 10c0/d18841b43d3799f69db0bdae380d19d05f43b716315c5bfd4d6c1b3467bada2644eab8c04bb5afdb94bba87604da06d466f22fe30df6bcf0518c373593bb474a
-  languageName: node
-  linkType: hard
-
 "@types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.20.5":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -4594,13 +4587,6 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 10c0/c9c52697227661b68d0debaf972222d4f622aa06b185824164e153438afa7b08273432ca43ea792cadb24dada1d46f6f6bb1ef8de9956979288cc1b96bf9914e
-  languageName: node
-  linkType: hard
-
-"add@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "add@npm:2.0.6"
-  checksum: 10c0/6b21d5f2e58cf5e15d56cc6f9ebce04f04f4c33ae25f09d600ddacf8df00036ba521f17feb1b3f81307b7c6d2ef0bed8b511a0f86f062eb90c2f909b48b588ae
   languageName: node
   linkType: hard
 
@@ -11286,9 +11272,7 @@ __metadata:
     "@react-navigation/native-stack": "npm:^7.14.12"
     "@release-it/conventional-changelog": "npm:^10.0.6"
     "@shopify/restyle": "npm:^2.4.5"
-    "@types/add": "npm:^2"
     "@types/react": "npm:^19.2.0"
-    add: "npm:^2.0.6"
     commitlint: "npm:^20.5.0"
     del-cli: "npm:^7.0.0"
     eslint: "npm:^9.39.4"
@@ -11320,10 +11304,13 @@ __metadata:
     react-native-haptic-feedback: ">=2.0.0"
     react-native-reanimated: ">=3.0.0"
     react-native-safe-area-context: ">=4.0.0"
-    react-native-screens: ">=3.0.0"
     react-native-worklets: ">=0.8.0"
   peerDependenciesMeta:
-    react-native-screens:
+    "@gorhom/bottom-sheet":
+      optional: true
+    react-native-haptic-feedback:
+      optional: true
+    react-native-worklets:
       optional: true
   languageName: unknown
   linkType: soft
