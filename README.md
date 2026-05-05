@@ -4,23 +4,19 @@ A simple fintech ui kit
 
 ## Installation
 
-
 ```sh
 npm install react-native-fintech-kit
 ```
 
-
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-fintech-kit';
+// import { multiply } from 'react-native-fintech-kit';
 
-// ...
+// // ...
 
-const result = multiply(3, 7);
+// const result = multiply(3, 7);
 ```
-
 
 ## Contributing
 

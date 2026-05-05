@@ -1,0 +1,33 @@
+import type { Theme } from '.';
+import type { AmountInputConfig } from '../components/AmountInput/AmountInput.types';
+
+// src/theme/types.ts
+export type OtpInputConfig = {
+  cellSize?: { width: number; height: number };
+  cellBorderRadius?: number;
+  cellBorderWidth?: number;
+  fontSize?: number;
+  fontFamily?: string;
+  gap?: keyof Theme['spacing'];
+  activeBorderColor?: keyof Theme['colors'];
+  filledBorderColor?: keyof Theme['colors'];
+  errorBorderColor?: keyof Theme['colors'];
+  defaultBorderColor?: keyof Theme['colors'];
+  backgroundColor?: keyof Theme['colors'];
+};
+
+export type ButtonConfig = {
+  borderRadius?: number;
+  height?: number;
+  fontSize?: number;
+  fontFamily?: string;
+};
+
+// Grow this as you add components
+export type FintechKitConfig = {
+  otpInput?: OtpInputConfig;
+  button?: ButtonConfig;
+  amountInput?: AmountInputConfig;
+  // pinPad?: PinPadConfig;
+  // transactionCard?: TransactionCardConfig;
+};

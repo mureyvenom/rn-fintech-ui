@@ -1,20 +1,25 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-fintech-kit';
+import { NavigationContainer } from '@react-navigation/native';
 
-const result = multiply(3, 7);
+import { FintechKitProvider } from 'react-native-fintech-kit';
+import { AppNavigator } from './navigators';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
+const AppInner = () => {
+  return (
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
+  );
+};
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <FintechKitProvider>
+          <AppInner />
+        </FintechKitProvider>
+      </GestureHandlerRootView>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
