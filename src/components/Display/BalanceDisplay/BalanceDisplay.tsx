@@ -3,12 +3,12 @@ import React, { useRef } from 'react';
 import { Animated, TouchableOpacity, StyleSheet } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import Box from '../Box';
-import Text from '../Text';
-import SkeletonLoader from '../SkeletonLoader/SkeletonLoader';
-import { formatAmount, getDecimalsForCurrency } from '../../utils/currency';
-import { useComponentConfig } from '../../theme/FintechKitProvider';
-import type { Theme } from '../../theme';
+import Box from '../../Core/Box';
+import Text from '../../Core/Text';
+import SkeletonLoader from '../../Feedback/SkeletonLoader/SkeletonLoader';
+import { formatAmount, getDecimalsForCurrency } from '../../../utils/currency';
+import { useComponentConfig } from '../../../theme/provider/FintechKitProvider';
+import type { Theme } from '../../../theme';
 import type { BalanceDisplayProps } from './BalanceDisplay.types';
 
 // ─── Size config ──────────────────────────────────────────────────────────────

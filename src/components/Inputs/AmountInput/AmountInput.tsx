@@ -10,15 +10,15 @@ import {
 } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import Box from '../Box';
-import Text from '../Text';
-import type { Theme } from '../../theme';
-import { useComponentConfig } from '../../theme/FintechKitProvider';
+import Box from '../../Core/Box';
+import Text from '../../Core/Text';
+import type { Theme } from '../../../theme';
+import { useComponentConfig } from '../../../theme/provider/FintechKitProvider';
 import {
   formatInputString,
   parseFormattedAmount,
   validateAmount,
-} from '../../utils/currency';
+} from '../../../utils/currency';
 import type { AmountInputProps } from './AmountInput.types';
 type TextInputRef = React.ElementRef<typeof TextInput>;
 

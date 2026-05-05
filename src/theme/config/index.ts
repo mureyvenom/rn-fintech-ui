@@ -1,6 +1,8 @@
-import type { Theme } from '.';
-import type { AmountInputConfig } from '../components/AmountInput/AmountInput.types';
-import type { TransactionCardConfig } from '../components/TransactionCard/TransactionCard.types';
+import type { Theme } from '../index';
+import type {
+  AmountInputConfig,
+  TransactionCardConfig,
+} from '../../components';
 
 export type OtpInputConfig = {
   cellSize?: { width: number; height: number };

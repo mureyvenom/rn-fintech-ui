@@ -4,4 +4,5 @@ export type {
   Transaction,
   TransactionStatus,
   TransactionType,
+  TransactionCardConfig,
 } from './TransactionCard.types';

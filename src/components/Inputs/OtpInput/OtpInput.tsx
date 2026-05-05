@@ -7,15 +7,15 @@ import {
   Platform,
 } from 'react-native';
 import { useTheme } from '@shopify/restyle';
-import { useComponentConfig } from '../../theme/FintechKitProvider';
+import { useComponentConfig } from '../../../theme/provider/FintechKitProvider';
 
 interface TextInputKeyPressEventData {
   key: string;
 }
 
-import Box from '../Box';
-import type { Theme } from '../../theme';
-import type { OtpInputConfig } from '../../theme/types';
+import Box from '../../Core/Box';
+import type { Theme } from '../../../theme';
+import type { OtpInputConfig } from '../../../theme/config';
 
 export type OtpInputProps = {
   /** Number of OTP digits. Defaults to 6. */

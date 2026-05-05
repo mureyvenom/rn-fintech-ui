@@ -12,10 +12,10 @@ import BottomSheet, {
 } from '@gorhom/bottom-sheet';
 import { useTheme } from '@shopify/restyle';
 
-import Box from '../Box';
-import Text from '../Text';
-import type { Theme } from '../../theme';
-import type { Currency } from '../../types';
+import Box from '../../Core/Box';
+import Text from '../../Core/Text';
+import type { Theme } from '../../../theme';
+import type { Currency } from '../../../types/global';
 
 export type CurrencySelectorProps = {
   isOpen: boolean;

@@ -2,12 +2,12 @@ import { useCallback } from 'react';
 import { TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import Box from '../Box';
-import Text from '../Text';
-import { useComponentConfig } from '../../theme/FintechKitProvider';
-import { formatAmount, getDecimalsForCurrency } from '../../utils/currency';
-import { formatTransactionDate } from '../../utils/date';
-import type { Theme } from '../../theme';
+import Box from '../../Core/Box';
+import Text from '../../Core/Text';
+import { useComponentConfig } from '../../../theme/provider/FintechKitProvider';
+import { formatAmount, getDecimalsForCurrency } from '../../../utils/currency';
+import { formatTransactionDate } from '../../../utils/date';
+import type { Theme } from '../../../theme';
 import type {
   TransactionCardProps,
   TransactionStatus,

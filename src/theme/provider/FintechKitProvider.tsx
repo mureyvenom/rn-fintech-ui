@@ -2,8 +2,8 @@
 import React, { createContext, useContext } from 'react';
 import { ThemeProvider } from '@shopify/restyle';
 import { ThemeModeProvider, useThemeMode } from './ThemeModeContext';
-import { createAppTheme } from './index';
-import type { FintechKitConfig } from './types';
+import { createAppTheme } from '../index';
+import type { FintechKitConfig } from '../config';
 
 const ConfigContext = createContext<FintechKitConfig>({});
 

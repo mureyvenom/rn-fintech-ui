@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import Box from '../Box';
-import type { Theme } from '../../theme';
+import Box from '../../Core/Box';
+import type { Theme } from '../../../theme';
 import type {
   SkeletonBalanceProps,
   SkeletonBlockProps,
