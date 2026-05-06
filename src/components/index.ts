@@ -28,5 +28,7 @@ export type {
   Transaction,
   TransactionCardConfig,
 } from './Display/TransactionCard';
+export type { BiometricType, PinPadConfig, PinPadProps } from './Inputs/PinPad';
+export { KeypadGrid, PinDots, PinPad } from './Inputs/PinPad';
 export { PaymentCard } from './Inputs/PaymentCard';
 export type { PaymentCardConfig, PaymentCardProps } from './Inputs/PaymentCard';

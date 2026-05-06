@@ -5,6 +5,7 @@ import { OtpScreen } from '../screens/OtpScreen';
 import { PaymentScreen } from '../screens/AmountInputScreen';
 import { BalanceDisplayScreen } from '../screens/BalanceDisplayScreen';
 import { TransactionsScreen } from '../screens/TransactionsScreen';
+import { PinPadScreen } from '../screens/PinPadScreen';
 import { PaymentCardScreen } from '../screens/PaymentCardScreen';
 
 export type ParamList = {
@@ -14,6 +15,7 @@ export type ParamList = {
   AmountInputScreen: undefined;
   BalanceDisplayScreen: undefined;
   TransactionCardScreen: undefined;
+  PinPadScreen: undefined;
   PaymentCardScreen: undefined;
 };
 
@@ -35,6 +37,7 @@ const AppNavigator = () => {
           name="TransactionCardScreen"
           component={TransactionsScreen}
         />
+        <Stack.Screen name="PinPadScreen" component={PinPadScreen} />
         <Stack.Screen name="PaymentCardScreen" component={PaymentCardScreen} />
       </Stack.Navigator>
     </>

@@ -1,6 +1,7 @@
 import type { Theme } from '../index';
 import type {
   AmountInputConfig,
+  PinPadConfig,
   TransactionCardConfig,
   PaymentCardConfig,
 } from '../../components';
@@ -39,6 +40,6 @@ export type FintechKitConfig = {
   amountInput?: AmountInputConfig;
   balanceDisplay?: BalanceDisplayConfig;
   transactionCard?: TransactionCardConfig;
+  pinPad?: PinPadConfig;
   paymentCard?: PaymentCardConfig;
-  // pinPad?: PinPadConfig;
 };
