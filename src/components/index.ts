@@ -28,3 +28,5 @@ export type {
   Transaction,
   TransactionCardConfig,
 } from './Display/TransactionCard';
+export { PaymentCard } from './Inputs/PaymentCard';
+export type { PaymentCardConfig, PaymentCardProps } from './Inputs/PaymentCard';
