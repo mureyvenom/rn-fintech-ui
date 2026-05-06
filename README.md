@@ -24,6 +24,10 @@
       <sub>Transaction Card</sub>
     </td>
     <td align="center">
+      <img src="./assets/gifs/paymentcard.gif" width="180" alt="Payment Card" /><br/>
+      <sub>Payment Card</sub>
+    </td>
+    <td align="center">
       <img src="./assets/gifs/pinpad.gif" width="180" alt="Pin Pad" /><br/>
       <sub>Pin Pad</sub>
     </td>

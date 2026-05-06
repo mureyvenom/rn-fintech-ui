@@ -3,6 +3,7 @@ import type {
   AmountInputConfig,
   PinPadConfig,
   TransactionCardConfig,
+  PaymentCardConfig,
 } from '../../components';
 
 export type OtpInputConfig = {
@@ -40,4 +41,5 @@ export type FintechKitConfig = {
   balanceDisplay?: BalanceDisplayConfig;
   transactionCard?: TransactionCardConfig;
   pinPad?: PinPadConfig;
+  paymentCard?: PaymentCardConfig;
 };
