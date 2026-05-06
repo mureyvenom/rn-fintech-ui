@@ -23,6 +23,10 @@
       <img src="./assets/gifs/transactioncard.png" width="180" alt="Transaction Card" /><br/>
       <sub>Transaction Card</sub>
     </td>
+    <td align="center">
+      <img src="./assets/gifs/pinpad.gif" width="180" alt="Pin Pad" /><br/>
+      <sub>Pin Pad</sub>
+    </td>
   </tr>
 </table>
 

@@ -28,3 +28,5 @@ export type {
   Transaction,
   TransactionCardConfig,
 } from './Display/TransactionCard';
+export type { BiometricType, PinPadConfig, PinPadProps } from './Inputs/PinPad';
+export { KeypadGrid, PinDots, PinPad } from './Inputs/PinPad';

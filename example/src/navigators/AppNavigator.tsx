@@ -5,6 +5,7 @@ import { OtpScreen } from '../screens/OtpScreen';
 import { PaymentScreen } from '../screens/AmountInputScreen';
 import { BalanceDisplayScreen } from '../screens/BalanceDisplayScreen';
 import { TransactionsScreen } from '../screens/TransactionsScreen';
+import { PinPadScreen } from '../screens/PinPadScreen';
 
 export type ParamList = {
   Home: undefined;
@@ -13,6 +14,7 @@ export type ParamList = {
   AmountInputScreen: undefined;
   BalanceDisplayScreen: undefined;
   TransactionCardScreen: undefined;
+  PinPadScreen: undefined;
 };
 
 const Stack = createNativeStackNavigator<ParamList>();
@@ -33,6 +35,7 @@ const AppNavigator = () => {
           name="TransactionCardScreen"
           component={TransactionsScreen}
         />
+        <Stack.Screen name="PinPadScreen" component={PinPadScreen} />
       </Stack.Navigator>
     </>
   );
