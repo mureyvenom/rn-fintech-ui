@@ -1,6 +1,6 @@
 {
   "name": "react-native-fintech-kit",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Production-ready React Native UI components for fintech — OTP inputs, amount inputs, balance displays, transaction cards, currency selectors. TypeScript-first, Restyle-powered, dark mode ready.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
