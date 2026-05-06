@@ -167,11 +167,12 @@
       "<rootDir>/lib/"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@react-native|react-native-reanimated|react-native-haptic-feedback|@shopify/restyle|@gorhom)/)"
+      "node_modules/(?!(react-native|@react-native|react-native-reanimated|react-native-worklets|react-native-haptic-feedback|@shopify/restyle|@gorhom)/)"
     ],
-    "setupFilesAfterFramework": [
-      "@testing-library/jest-native/extend-expect"
-    ]
+    "moduleNameMapper": {
+      "^react-native-reanimated$": "<rootDir>/node_modules/react-native-reanimated/mock",
+      "^react-native-worklets$": "<rootDir>/node_modules/react-native-worklets/mock"
+    }
   },
   "commitlint": {
     "extends": [
